@@ -79,7 +79,6 @@ function TestRunner(config, options) {
   );
 
   this._nodeHasteTestRegExp = new RegExp(
-    '/' + utils.escapeStrForRegex(config.testDirectoryName) + '/' +
     '.*\\.(' +
       config.testFileExtensions.map(function(ext) {
         return utils.escapeStrForRegex(ext);
